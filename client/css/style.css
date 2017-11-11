@@ -7,13 +7,13 @@
     fill: #ffffff;
 }
 
-@font-face{font-family:herm;src:url(../font/herm.ttf)}
-@font-face{font-family:kalig;src:url(../font/kalig.ttf)}
-@font-face{font-family:money;src:url(../font/money.ttf)}
-@font-face{font-family:parie;src:url(../font/parie.ttf)}
-@font-face{font-family:victor;src:url(../font/victor.ttf)}
-body{background:url(../img/fonBody.jpg) no-repeat center center;background-size:100% 100%}
-.container{margin:0 auto;background:url(../img/content_fon.png) no-repeat center center;background-size:100% 100%;padding:66px 31px}
+@font-face{font-family:herm;src:url(/src/font/herm.ttf)}
+@font-face{font-family:kalig;src:url(/src/font/kalig.ttf)}
+@font-face{font-family:money;src:url(/src/font/money.ttf)}
+@font-face{font-family:parie;src:url(/src/font/parie.ttf)}
+@font-face{font-family:victor;src:url(/src/font/victor.ttf)}
+body{background:url(/src/img/fonBody.jpg) no-repeat center center;background-size:100% 100%}
+.container{margin:0 auto;background:url(/src/img/content_fon.png) no-repeat center center;background-size:100% 100%;padding:66px 31px}
 .font-herm{font-family:herm}
 .font-kalig{font-family:kalig}
 .font-money{font-family:money}
@@ -154,9 +154,6 @@ button.cancelButton-swal:hover{color:#282828!important}
 .clickwholebox{
     border-bottom: 1px solid #000;
 }
-
-
-
 
 .new-event-block{
     margin-top: 10px;
@@ -1642,8 +1639,12 @@ td.yescolortext{
     overflow: auto;
 }
 
-html, body{
+html{
     overflow-x: hidden !important;
+}
+
+body{
+    overflow-y: hidden !important;
 }
 
 .ui-tabs .ui-tabs-nav li {
