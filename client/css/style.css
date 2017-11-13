@@ -1,3 +1,16 @@
+@import '/src/plugins/formstyler/jquery.formstyler.css';
+@import '/src/plugins/JQui/jquery-ui.css';
+@import '/src/font-awesome/css/font-awesome.min.css';
+@import '/src/css/lib/bootstrap.min.css';
+@import '/src/css/lib/bootstrap-theme.min.css';
+@import '/src/css/lib/jquery.mCustomScrollbar.min.css';
+@import '/src/css/lib/flipclock.min.css';
+@import '/src/css/lib/clock-size.min.css';
+@import '/src/css/lib/hint.min.css';
+@import '/src/css/lib/sweetalert2.min.css';
+@import '/src/css/lib/animate.min.css';
+@import '/src/js/jquery-ui-timepicker-addon.css';
+@import '/css/style.css';
 
 .loader{
     float: right;
@@ -275,7 +288,7 @@ div#main_content {
 }
 
 .modal-content {
-    background: url(/img/content_fon.png) no-repeat center center;
+    background: url(/src/img/content_fon.png) no-repeat center center;
 }
 
 
@@ -434,7 +447,7 @@ p.gr-co {
 .icon-soc-big {
     width: 51px;
     height: 52px;
-    background: url(/img/soc-i.png) 0 0 no-repeat;
+    background: url(/src/img/soc-i.png) 0 0 no-repeat;
     border-radius: 50px !important;
     display: block;
     background-image: none;
@@ -443,7 +456,7 @@ p.gr-co {
 }
 
 .icon-soc-big.i1 {
-    background: url(/img/i1.png) 0 0 no-repeat;
+    background: url(/src/img/i1.png) 0 0 no-repeat;
 }
 
 .list-inline>li {
@@ -476,85 +489,85 @@ ul.list-unstyled.list-inline.social {
 
 
 .i1{
-    background: url(/img/i1.png) 0 0 no-repeat;
+    background: url(/src/img/i1.png) 0 0 no-repeat;
 }
 .i2{
-    background: url(/img/i2.png) 0 0 no-repeat;
+    background: url(/src/img/i2.png) 0 0 no-repeat;
 }
 .i3{
-    background: url(/img/i3.png) 0 0 no-repeat;
+    background: url(/src/img/i3.png) 0 0 no-repeat;
 }
 .i4{
-    background: url(/img/i4.png) 0 0 no-repeat;
+    background: url(/src/img/i4.png) 0 0 no-repeat;
 }
 .i5{
-    background: url(/img/i5.png) 0 0 no-repeat;
+    background: url(/src/img/i5.png) 0 0 no-repeat;
 }
 .i6{
-    background: url(/img/i6.png) 0 0 no-repeat;
+    background: url(/src/img/i6.png) 0 0 no-repeat;
 }
 .i7{
-    background: url(/img/i7.png) 0 0 no-repeat;
+    background: url(/src/img/i7.png) 0 0 no-repeat;
 }
 .i8{
-    background: url(/img/i8.png) 0 0 no-repeat;
+    background: url(/src/img/i8.png) 0 0 no-repeat;
 }
 .i9{
-    background: url(/img/i9.png) 0 0 no-repeat;
+    background: url(/src/img/i9.png) 0 0 no-repeat;
 }
 .i10{
-    background: url(/img/i10.png) 0 0 no-repeat;
+    background: url(/src/img/i10.png) 0 0 no-repeat;
 }
 .i11{
-    background: url(/img/i11.png) 0 0 no-repeat;
+    background: url(/src/img/i11.png) 0 0 no-repeat;
 }
 .i12{
-    background: url(/img/i12.png) 0 0 no-repeat;
+    background: url(/src/img/i12.png) 0 0 no-repeat;
 }
 .i13{
-    background: url(/img/i13.png) 0 0 no-repeat;
+    background: url(/src/img/i13.png) 0 0 no-repeat;
 }
 .i14{
-    background: url(/img/i14.png) 0 0 no-repeat;
+    background: url(/src/img/i14.png) 0 0 no-repeat;
 }
 .i15{
-    background: url(/img/i15.png) 0 0 no-repeat;
+    background: url(/src/img/i15.png) 0 0 no-repeat;
 }
 .i16{
-    background: url(/img/i16.png) 0 0 no-repeat;
+    background: url(/src/img/i16.png) 0 0 no-repeat;
 }
 .i17{
-    background: url(/img/i17.png) 0 0 no-repeat;
+    background: url(/src/img/i17.png) 0 0 no-repeat;
 }
 .i18{
-    background: url(/img/i18.png) 0 0 no-repeat;
+    background: url(/src/img/i18.png) 0 0 no-repeat;
 }
 .i19{
-    background: url(/img/i19.png) 0 0 no-repeat;
+    background: url(/src/img/i19.png) 0 0 no-repeat;
 }
 .i20{
-    background: url(/img/i20.png) 0 0 no-repeat;
+    background: url(/src/img/i20.png) 0 0 no-repeat;
 }
 .i21{
-    background: url(/img/i21.png) 0 0 no-repeat;
+    background: url(/src/img/i21.png) 0 0 no-repeat;
 }
 .i22{
-    background: url(/img/i22.png) 0 0 no-repeat;
+    background: url(/src/img/i22.png) 0 0 no-repeat;
 }
 .i23{
-    background: url(/img/i23.png) 0 0 no-repeat;
+    background: url(/src/img/i23.png) 0 0 no-repeat;
 }
 .i24{
-    background: url(/img/i24.png) 0 0 no-repeat;
+    background: url(/src/img/i24.png) 0 0 no-repeat;
 }
 .i25{
-    background: url(/img/i25.png) 0 0 no-repeat;
+    background: url(/src/img/i25.png) 0 0 no-repeat;
 }
 .i26{
-    background: url(/img/i26.png) 0 0 no-repeat;
+    background: url(/src/img/i26.png) 0 0 no-repeat;
 }
 .i27{
-    background: url(/img/i27.png) 0 0 no-repeat;
+    background: url(/src/img/i27.png) 0 0 no-repeat;
 }
 .icon-soc-big {
     margin-left: -5px !important;
@@ -744,13 +757,13 @@ textarea.txta.form-control:-ms-input-placeholder      {color:#333 !important;}
 
     .container {
         margin: 0 auto;
-        background: url(/img/p1.jpg) no-repeat center center;
+        background: url(/src/img/p1.jpg) no-repeat center center;
         background-size: cover;
         padding: 19px 10px;
     }
 
     body {
-        background: url(/img/fonBody.png) no-repeat center center;
+        background: url(/src/img/fonBody.png) no-repeat center center;
         background-size: cover;
     }
 
@@ -1160,7 +1173,7 @@ div#ui-datepicker-div, .ui-datepicker .ui-datepicker-header {
 .ves-center {
     width: 84px;
     height: 78px;
-    background: url(/img/bt1.png) no-repeat center center;
+    background: url(/src/img/bt1.png) no-repeat center center;
     position: relative;
     margin: 0 auto;
     margin-bottom: -17px;
@@ -1170,7 +1183,7 @@ div#ui-datepicker-div, .ui-datepicker .ui-datepicker-header {
 .ves-right{
     width: 84px;
     height: 78px;
-    background: url(/img/bt2.png) no-repeat center center;
+    background: url(/src/img/bt2.png) no-repeat center center;
     position: relative;
     margin: 0 auto;
     margin-bottom: -17px;
@@ -1180,7 +1193,7 @@ div#ui-datepicker-div, .ui-datepicker .ui-datepicker-header {
 .ves-left{
     width: 84px;
     height: 78px;
-    background: url(/img/bt3.png) no-repeat center center;
+    background: url(/src/img/bt3.png) no-repeat center center;
     position: relative;
     margin: 0 auto;
     margin-bottom: -17px;
@@ -1864,7 +1877,7 @@ section#comment-list h6:before {
 
 
 .authentication{
-    background: url(/img/bm.png) no-repeat center center;
+    background: url(/src/img/bm.png) no-repeat center center;
     border-radius: 0;
     background-size: 100% 100% !important;
     border: 0 !important;
@@ -1877,7 +1890,7 @@ section#comment-list h6:before {
 
 span.sticker {
     position: relative;
-    background: url(/img/pro.png) 0 0 no-repeat;
+    background: url(/src/img/pro.png) 0 0 no-repeat;
     color: #7F5849;
     padding-left: 5px;
     padding-right: 5px;
@@ -1904,7 +1917,7 @@ span.sticker {
 }
 
 i.fa.fa-plus.add_balance {
-    background: url(/img/flp.png) no-repeat center center;
+    background: url(/src/img/flp.png) no-repeat center center;
     width: 22px;
     height: 23px;
     background-size: contain;

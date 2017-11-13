@@ -4,23 +4,32 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="description" content="Ставки на курс Биткойна">
     <title>Cryptostake</title>
-	<link rel="stylesheet" href="/src/plugins/formstyler/jquery.formstyler.css" />
-	<link rel="stylesheet" href="/src/plugins/JQui/jquery-ui.css" />
-	<link href="/src/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-	<link href="/src/css/lib/bootstrap.min.css" rel="stylesheet">
-	<link href="/src/css/lib/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="/src/css/lib/jquery.mCustomScrollbar.min.css" rel="stylesheet">
-	<link href="/src/css/lib/flipclock.min.css" rel="stylesheet">
-	<link href="/src/css/lib/clock-size.min.css" rel="stylesheet">
-	<link href="/src/css/lib/hint.min.css" rel="stylesheet">
-	<link href="/src/css/lib/sweetalert2.min.css" rel="stylesheet">
-	<link href="/src/css/lib/animate.min.css" rel="stylesheet">
-	<link rel="stylesheet" media="all" type="text/css" href="/src/js/jquery-ui-timepicker-addon.css" />
-	<link rel="stylesheet" type="text/css" class="__meteor-css__" href="/merged-stylesheets.css">
 </head>
 
+
 <template name="main">
-<body>
+
+<script type="text/javascript" src="/src/js/lang/ru.min.js"></script>
+<script type="text/javascript" src="/src/js/lib/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="/src/js/lib/async.min.js"></script>
+<script type="text/javascript" src="/src/js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="/src/js/lib/bootstrap.min.js"></script>
+<script type="text/javascript" src="/src/js/lib/flipclock.min.js"></script>
+<script type="text/javascript" src="/src/js/lib/sweetalert2.min.js"></script>
+<script type="text/javascript" src="/src/js/lib/engine.io.js"></script>
+<script type="text/javascript" src="/src/plugins/formstyler/jquery.formstyler.js"></script>
+<script type="text/javascript" src="/src/plugins/JQui/jquery-ui.js"></script>
+<script type="text/javascript" src="/src/js/reactive/ractive.min.js"></script>
+<script type="text/javascript" src="/src/js/reactive/ractive-events-keys.min.js"></script>
+<script type="text/javascript" src="/src/js/reactive/ractive-require.min.js"></script>
+<script type="text/javascript" src="/src/js/reactive/ractive-init.js"></script>
+<script type="text/javascript" src="/src/js/engineio.js"></script>
+<script type="text/javascript" src="/src/js/scrollBar.js"></script>
+<script type="text/javascript" src="/src/js/actionMessage.js"></script>
+<script type="text/javascript" src="/src/js/script.js"></script>
+<script type="text/javascript" src="/src/js/jquery-ui-timepicker-addon.js"></script>
+
+
   <div id="main_content" class="container">
     <div class="header_block">
         <div class="col-md-5 col-xs-12">
@@ -307,61 +316,42 @@
         </div>
     </div>
 </div>
-</body>
-<script src="/src/js/lang/ru.min.js"></script>
-<script src="/src/js/lib/jquery-2.2.0.min.js"></script>
-<script src="/src/js/lib/async.min.js"></script>
-<script src="/src/js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="/src/js/reactive/ractive.min.js"></script>
-<script src="/src/js/reactive/ractive-events-keys.min.js"></script>
-<script src="/src/js/reactive/ractive-require.min.js"></script>
-<script src="/src/js/reactive/ractive-init.js"></script>
-<script src="/src/js/lib/bootstrap.min.js"></script>
-<script src="/src/js/lib/flipclock.min.js"></script>
-<script src="/src/js/lib/sweetalert2.min.js"></script>
-<script src="/src/js/lib/engine.io.js"></script>
-<script src="/src/js/engineio.js"></script>
-<script src="/src/zeroclipboard-2.2.0/dist/ZeroClipboard.js"></script>
-<script src="/src/js/scrollBar.js"></script>
-<script src="/src/js/actionMessage.js"></script>
-<script src="/src/js/script.js"></script>
-<script src="/src/plugins/formstyler/jquery.formstyler.js"></script>
-<script src="/src/plugins/JQui/jquery-ui.js"></script>
-<script src="/src/js/jquery-ui-timepicker-addon.js"></script>
+
 <script>
-    window.onload = function () {
-        $('.eventblock').addClass('show-blk');
-        $('.content-bet-info').addClass('show-blk');
-    }
-</script>
-<script>
-    $(function () {
-        $("#tabs").tabs();
-    });
-</script>
-<script>
-window.onload=function(){
-$('.eventblock').addClass( 'show-blk');
-$('.content-bet-info').addClass( 'show-blk');
+
+
+window.onload = function () {
+    $('.eventblock').addClass('show-blk');
+    $('.content-bet-info').addClass('show-blk');
 }
-</script>
 
-<script>
-  $( function() {
-    $( ".datepicker" ).datepicker();
-  } );
 
-    jQuery(function($){
+$(function () {
+    $("#tabs").tabs();
+});
+
+
+window.onload=function(){
+	$('.eventblock').addClass('show-blk');
+	$('.content-bet-info').addClass('show-blk');
+}
+
+
+$(function() {
+	$('.datepicker').datepicker();
+});
+
+jQuery(function($){
 	$.datepicker.regional['ru'] = {
 		closeText: 'Закрыть',
 		prevText: 'Назад',
 		nextText: 'Далее',
 
 		monthNames: ['Январь', 'Февраль', 'Март', 'Апрель',
-'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь',
-'Октябрь', 'Ноябрь', 'Декабрь'],
+						'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь',
+						'Октябрь', 'Ноябрь', 'Декабрь'],
 
-	  monthNamesShort: [ "Январь", "Феваль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" ],
+		monthNamesShort: [ "Январь", "Феваль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" ],
 		dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
 
 		dateFormat: 'dd.mm.yy',
@@ -373,15 +363,15 @@ $('.content-bet-info').addClass( 'show-blk');
 });
 
 
-$( function() {
-    $( "#accordion" ).accordion({
+$(function() {
+    $("#accordion").accordion({
       heightStyle: "content"
     });
-  } );
+});
 
 
 
-	$('#basic_example_2').timepicker({
+$('#basic_example_2').timepicker({
 	timeOnlyTitle: 'Выберите время',
 	timeText: 'Время',
 	hourText: 'Часы',
@@ -392,7 +382,7 @@ $( function() {
 });
 
 
-	$('#basic_example_3').timepicker({
+$('#basic_example_3').timepicker({
 	timeOnlyTitle: 'Выберите время',
 	timeText: 'Время',
 	hourText: 'Часы',
@@ -408,7 +398,7 @@ $( function() {
     <div class="col-md-12 font-herm">© Все права защищены Cryptostake 2015 - 2016.</div>
 
 </div>
-<script src="//ulogin.ru/js/ulogin.js"></script>
+<script type="text/javascript" src="//ulogin.ru/js/ulogin.js"></script>
 
 <div class="modal fade" id="enterModal" tabindex="-1" role="dialog" aria-labelledby="enterModal" aria-hidden="true">
     <div class="modal-dialog modal-sm">
