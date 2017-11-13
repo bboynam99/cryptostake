@@ -9,25 +9,27 @@
 
 <template name="main">
 
-<script type="text/javascript" src="/src/js/lang/ru.min.js"></script>
-<script type="text/javascript" src="/src/js/lib/jquery-2.2.0.min.js"></script>
-<script type="text/javascript" src="/src/js/lib/async.min.js"></script>
-<script type="text/javascript" src="/src/js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
-<script type="text/javascript" src="/src/js/lib/bootstrap.min.js"></script>
-<script type="text/javascript" src="/src/js/lib/flipclock.min.js"></script>
-<script type="text/javascript" src="/src/js/lib/sweetalert2.min.js"></script>
-<script type="text/javascript" src="/src/js/lib/engine.io.js"></script>
-<script type="text/javascript" src="/src/plugins/formstyler/jquery.formstyler.js"></script>
-<script type="text/javascript" src="/src/plugins/JQui/jquery-ui.js"></script>
-<script type="text/javascript" src="/src/js/reactive/ractive.min.js"></script>
-<script type="text/javascript" src="/src/js/reactive/ractive-events-keys.min.js"></script>
-<script type="text/javascript" src="/src/js/reactive/ractive-require.min.js"></script>
-<script type="text/javascript" src="/src/js/reactive/ractive-init.js"></script>
-<script type="text/javascript" src="/src/js/engineio.js"></script>
-<script type="text/javascript" src="/src/js/scrollBar.js"></script>
-<script type="text/javascript" src="/src/js/actionMessage.js"></script>
-<script type="text/javascript" src="/src/js/script.js"></script>
-<script type="text/javascript" src="/src/js/jquery-ui-timepicker-addon.js"></script>
+	<script src="/src/js/lang/ru.min.js"></script>
+	<script src="/src/js/lib/jquery-1.9.1.min.js"></script>
+	<script src="/src/js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="/src/plugins/JQui/jquery-ui.js"></script>
+	<script src="/src/js/lib/bootstrap.min.js"></script>
+	<script src="/src/js/lib/flipclock.min.js"></script>
+	<script src="/src/js/lib/sweetalert2.min.js"></script>
+	<script src="/src/js/lib/engine.io.js"></script>
+	<script src="/src/js/engineio.js"></script>
+	<script src="/src/zeroclipboard-2.2.0/dist/ZeroClipboard.js"></script>
+	<script src="/src/js/reactive/ractive.js"></script>
+	<script src="/src/js/reactive/ractive-events-keys.js"></script>
+	<script src="/src/js/reactive/ractive-require.js"></script>
+	<script src="/src/js/reactive/ractive-init.js"></script>
+	<script src="/src/js/scrollBar.js"></script>
+	<script src="/src/js/actionMessage.min.js"></script>
+	<script src="/src/js/script.min.js"></script>
+	<script src="/src/plugins/formstyler/jquery.formstyler.js"></script>
+
+	<script type="text/javascript" src="/src/js/jquery-ui-timepicker-addon.js"></script>
+
 
 
   <div id="main_content" class="container">
@@ -318,79 +320,6 @@
 </div>
 
 <script>
-
-
-window.onload = function () {
-    $('.eventblock').addClass('show-blk');
-    $('.content-bet-info').addClass('show-blk');
-}
-
-
-$(function () {
-    $("#tabs").tabs();
-});
-
-
-window.onload=function(){
-	$('.eventblock').addClass('show-blk');
-	$('.content-bet-info').addClass('show-blk');
-}
-
-
-$(function() {
-	$('.datepicker').datepicker();
-});
-
-jQuery(function($){
-	$.datepicker.regional['ru'] = {
-		closeText: 'Закрыть',
-		prevText: 'Назад',
-		nextText: 'Далее',
-
-		monthNames: ['Январь', 'Февраль', 'Март', 'Апрель',
-						'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь',
-						'Октябрь', 'Ноябрь', 'Декабрь'],
-
-		monthNamesShort: [ "Январь", "Феваль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" ],
-		dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
-
-		dateFormat: 'dd.mm.yy',
-		firstDay: 1,
-		isRTL: false,
-		showMonthAfterYear: false,
-		yearSuffix: ''};
-	$.datepicker.setDefaults($.datepicker.regional['ru']);
-});
-
-
-$(function() {
-    $("#accordion").accordion({
-      heightStyle: "content"
-    });
-});
-
-
-
-$('#basic_example_2').timepicker({
-	timeOnlyTitle: 'Выберите время',
-	timeText: 'Время',
-	hourText: 'Часы',
-	minuteText: 'Минуты',
-	secondText: 'Секунды',
-	currentText: 'Сейчас',
-	closeText: 'Закрыть'
-});
-
-
-$('#basic_example_3').timepicker({
-	timeOnlyTitle: 'Выберите время',
-	timeText: 'Время',
-	hourText: 'Часы',
-	minuteText: 'Минуты',
-	secondText: 'Секунды',
-	currentText: 'Сейчас',
-	closeText: 'Закрыть'
-});
 
 </script>
 
