@@ -33,7 +33,7 @@
 
   <div id="main_content" class="container">
     <div class="header_block">
-        <div class="col-md-5 col-xs-12">
+        <div class="col-md-6 col-xs-12">
             <img style="width:100%" src="src/img/logo.png"></div>
         <div class="col-md-6 col-xs-12 header_nav">
             <div class="col-sm-8 col-xs-12">
@@ -48,9 +48,23 @@
                 </div>
             </div>
 
-            <div class="col-sm-4 col-xs-12" id="login_block">
-				<a href="registration">Регистрация</a>
-            </div>
+            <div class="col-sm-4 col-xs-12">
+				<div class="row authentication">
+					<div class="font-herm login_user">Saflex</div>
+					<div class="font-parie balance_user">
+						0.120423 BTC
+						<span aria-label="Пополнить баланс." class="hint--top font-money">
+							<i class="fa fa-plus add_balance"></i>
+						</span>
+					</div>
+					<div role="group" aria-label="..." class="btn-group">
+						<button type="button" class="btn btn-default" onClick="window.location='profile.html'">Профиль</button>
+						<button type="button" class="btn btn-default">
+							<i aria-hidden="true" class="fa fa-sign-out"></i>
+						</button>
+					</div>
+				</div>
+			</div>
         </div>
     </div>
 

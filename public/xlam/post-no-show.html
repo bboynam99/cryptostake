@@ -16,7 +16,6 @@
 	<link href="src/css/lib/hint.min.css" rel="stylesheet">
 	<link href="src/css/lib/sweetalert2.min.css" rel="stylesheet">
 	<link href="src/css/lib/animate.min.css" rel="stylesheet">
-	<link rel="stylesheet" media="all" type="text/css" href="src/js/jquery-ui-timepicker-addon.css" />
 	<link href="src/css/style.min.css" rel="stylesheet">
 </head>
 <body>
@@ -248,41 +247,57 @@
 			<img src="src/img/lines.svg" class="dsp-ls" onerror="this.onerror=null; this.src='/src/img/line.png'" style="height: 100%;transform: rotate(0deg);position: absolute;"></div>
 
 		<div class="col-md-6 col-sm-12 col-xs-12">
+			<h1></h1>
+			<div class="content-bet-info">
+				<div class="news-block-area">
+					<div class="time">01.12.2016</div>
 
-			<h1>Статистика</h1>
+					<div class="stars-area">
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
 
-			<div class="contacts-area">
-				<p>
-					Активные ставки:
-					<span>23</span>
-				</p>
+						<i class="fa fa-star" aria-hidden="true"></i>
 
-				<p>
-					В ожидании разрешения:
-					<span>1/8</span>
-				</p>
+						<i class="fa fa-star-half-o" aria-hidden="true"></i>
+						<i class="fa fa-star-o" aria-hidden="true"></i>
 
-				<p>
-					Урегулированные ставки:
-					<span>1305</span>
-				</p>
+					</div>
 
-				<p>
-					Подтвержденные ставки:
-					<span>18000</span>
-				</p>
+					<div class="h1-post">
+						Стоимость Биткойна может достигнуть 10000$ или даже 1$ млн. Чандлер Го объясняет как именно
+					</div>
 
-				<p>
-					Подтверждено общие:
-					<span>25474 BTC</span>
-				</p>
-				<p>
-					Последняя блокировка:
-					<span>14 минут назад</span>
-				</p>
+					<img src="src/img/11.jpg" class="img-responsive" alt="">
+					<p>
+						На платформе Unocoin 2 000 оптовых продавцов и розничных торговцев принимают к оплате биткойны. Sapna Book House, крупнейшая сеть книжных магазинов в стране еще до прихода на местный рынок Amazon, стала принимать к оплате биткойны. «Люди, использующие биткойны, а не Paypal, могут расплатиться по счету, с комиссией всего лишь 1%,”—говорит Сатхвик Вишванатх, глава и основатель Unocoin.
+					</p>
+
+					<p>
+						Его компания также разработала приложение, позволяющее расплачиваться биткойнами в пунктах продаж. Впрочем, пока что не многие спешат воспользоваться новой цифровой формой денег. «Большинство просто покупают биткойны и хранят их… если они решают их продать, то перекидывают на свой кошелек в Unocoin, конвертируют, и деньги отправляются на их банковский счет,”—поясняет Вишванатх.
+					</p>
+					<p>
+						В этой статье Дэмиан Бренер опишет несколько бизнес-моделей, появившихся в «отрасли» блокчейнов. Дэмиан – основатель и гендиректор Smart Contract Solutions, компании, выпускающей инструментарий для бизнеса, использующего в работе токены на блокчейнах.
+					</p>
+
+					<div id="hypercomments_widget"></div>
+					<script type="text/javascript">
+_hcwp = window._hcwp || [];
+_hcwp.push({widget:"Stream", widget_id: 75464});
+(function() {
+if("HC_LOAD_INIT" in window)return;
+HC_LOAD_INIT = true;
+var lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();
+var hcc = document.createElement("script"); hcc.type = "text/javascript"; hcc.async = true;
+hcc.src = ("https:" == document.location.protocol ? "https" : "http")+"://w.hypercomments.com/widget/hc/75464/"+lang+"/widget.js";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hcc, s.nextSibling);
+})();
+</script>
+					<a href="http://hypercomments.com" class="hc-link" title="comments widget">comments powered by HyperComments</a>
+
+				</div>
 
 			</div>
-
 		</div>
 
 		<div class="col-md-3 col-sm-12 col-xs-12  hidden-sm hidden-md hidden-lg">
@@ -681,47 +696,13 @@
 	<script src="src/js/script.min.js"></script>
 	<script src="src/plugins/formstyler/jquery.formstyler.js"></script>
 	<script src="src/plugins/JQui/jquery-ui.js"></script>
-	<script type="text/javascript" src="src/js/jquery-ui-timepicker-addon.js"></script>
-	
+
 	<script>
 window.onload=function(){
 $('.eventblock').addClass( 'show-blk');
 $('.content-bet-info').addClass( 'show-blk');
 }
 	</script>
-
-	<script>
-$( function() {
-    $( "#tabs" ).tabs();
-  } );
-	
-  </script>
-
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-	<script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Year', 'Sales', 'Expenses'],
-          ['2004',  1000,      400],
-          ['2005',  1170,      460],
-          ['2006',  660,       1120],
-          ['2007',  1030,      540]
-        ]);
-
-        var options = {
-          title: 'Company Performance',
-          curveType: 'function',
-          legend: { position: 'bottom' }
-        };
-
-        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
-
-        chart.draw(data, options);
-      }
-    </script>
 
 	<div class="container">
 		<div class="col-md-12 font-herm">© Все права защищены Cryptostake 2015 - 2016.</div>

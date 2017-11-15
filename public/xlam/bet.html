@@ -17,8 +17,7 @@
 	<link href="src/css/lib/sweetalert2.min.css" rel="stylesheet">
 	<link href="src/css/lib/animate.min.css" rel="stylesheet">
 	<link rel="stylesheet" media="all" type="text/css" href="src/js/jquery-ui-timepicker-addon.css" />
-	<link href="src/css/style.min.css" rel="stylesheet">
-</head>
+	<link href="src/css/style.min.css" rel="stylesheet"></head>
 <body>
 	<div id="main_content" class="container">
 		<div class="header_block">
@@ -248,41 +247,104 @@
 			<img src="src/img/lines.svg" class="dsp-ls" onerror="this.onerror=null; this.src='/src/img/line.png'" style="height: 100%;transform: rotate(0deg);position: absolute;"></div>
 
 		<div class="col-md-6 col-sm-12 col-xs-12">
+			<form action="">
+				<h1>Сделать ставку</h1>
 
-			<h1>Статистика</h1>
+				<div class="content-bet-info">
 
-			<div class="contacts-area">
-				<p>
-					Активные ставки:
-					<span>23</span>
-				</p>
+					<div class="profile-area">
 
-				<p>
-					В ожидании разрешения:
-					<span>1/8</span>
-				</p>
+						<div class="form-group">
+							<label>
+								<input type="radio" checked name="dva2"/>
+								спор
+							</label>
+							<label>
+								<input type="radio" name="dva2"/>
+								вангуй
+							</label>
 
-				<p>
-					Урегулированные ставки:
-					<span>1305</span>
-				</p>
+						</div>
 
-				<p>
-					Подтвержденные ставки:
-					<span>18000</span>
-				</p>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Размер ставки:" id="usr"></div>
 
-				<p>
-					Подтверждено общие:
-					<span>25474 BTC</span>
-				</p>
-				<p>
-					Последняя блокировка:
-					<span>14 минут назад</span>
-				</p>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Курс:" id="usr"></div>
 
-			</div>
+						<div class="form-group">
+							<p class="txtl-p">Тип сравнения с указанным курсом:</p>
+							<label>
+								<input type="radio" checked name="dva"/>
+								больше указанного
+							</label>
+							<label>
+								<input type="radio" name="dva"/>
+								меньше указанного
+							</label>
 
+						</div>
+
+						<p class="txtl-p">Прием ставок до:</p>
+
+						<div class="row form-group">
+							<div class="col-sm-6">
+
+								<div class="form-group">
+
+									<input type="text" class="datepicker form-control" placeholder="Дата:
+"></div>
+
+							</div>
+
+							<div class="col-sm-6">
+
+								<div class="form-group">
+
+									<input type="text" class="form-control"  name="basic_example_2" id="basic_example_2" value="" placeholder="Время:
+"></div>
+
+							</div>
+
+						</div>
+
+						<p class="txtl-p">Окончание события:</p>
+
+						<div class="row form-group">
+							<div class="col-sm-6">
+
+								<div class="form-group">
+
+									<input type="text" class="datepicker form-control" placeholder="Дата:
+"></div>
+
+							</div>
+
+							<div class="col-sm-6">
+
+								<div class="form-group">
+
+									<input type="text" class="form-control"  name="basic_example_2" id="basic_example_3" value="" placeholder="Время:
+"></div>
+
+							</div>
+
+						</div>
+
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="Тема:" id="usr"></div>
+
+						<div class="form-group">
+							<textarea class="form-control" placeholder="Описание:"></textarea>
+						</div>
+						<div class="form-group">
+							<button type="button" class="btn btn-default">Создать</button>
+						</div>
+
+					</div>
+
+				</div>
+			</form>
 		</div>
 
 		<div class="col-md-3 col-sm-12 col-xs-12  hidden-sm hidden-md hidden-lg">
@@ -682,7 +744,6 @@
 	<script src="src/plugins/formstyler/jquery.formstyler.js"></script>
 	<script src="src/plugins/JQui/jquery-ui.js"></script>
 	<script type="text/javascript" src="src/js/jquery-ui-timepicker-addon.js"></script>
-	
 	<script>
 window.onload=function(){
 $('.eventblock').addClass( 'show-blk');
@@ -691,37 +752,62 @@ $('.content-bet-info').addClass( 'show-blk');
 	</script>
 
 	<script>
-$( function() {
-    $( "#tabs" ).tabs();
+  $( function() {
+    $( ".datepicker" ).datepicker();
   } );
+  
+    jQuery(function($){
+	$.datepicker.regional['ru'] = {
+		closeText: 'Закрыть',
+		prevText: 'Назад',
+		nextText: 'Далее',
+
+		monthNames: ['Январь', 'Февраль', 'Март', 'Апрель',
+'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь',
+'Октябрь', 'Ноябрь', 'Декабрь'],
+
+	  monthNamesShort: [ "Январь", "Феваль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь" ],
+		dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+
+		dateFormat: 'dd.mm.yy',
+		firstDay: 1,
+		isRTL: false,
+		showMonthAfterYear: false,
+		yearSuffix: ''};
+	$.datepicker.setDefaults($.datepicker.regional['ru']);
+});	
+
+
+$( function() {
+    $( "#accordion" ).accordion({
+      heightStyle: "content"
+    });
+  } );	
+  
+  
+ 
+	$('#basic_example_2').timepicker({
+	timeOnlyTitle: 'Выберите время',
+	timeText: 'Время',
+	hourText: 'Часы',
+	minuteText: 'Минуты',
+	secondText: 'Секунды',
+	currentText: 'Сейчас',
+	closeText: 'Закрыть'
+});
+
+ 
+	$('#basic_example_3').timepicker({
+	timeOnlyTitle: 'Выберите время',
+	timeText: 'Время',
+	hourText: 'Часы',
+	minuteText: 'Минуты',
+	secondText: 'Секунды',
+	currentText: 'Сейчас',
+	closeText: 'Закрыть'
+});
 	
   </script>
-
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-	<script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Year', 'Sales', 'Expenses'],
-          ['2004',  1000,      400],
-          ['2005',  1170,      460],
-          ['2006',  660,       1120],
-          ['2007',  1030,      540]
-        ]);
-
-        var options = {
-          title: 'Company Performance',
-          curveType: 'function',
-          legend: { position: 'bottom' }
-        };
-
-        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
-
-        chart.draw(data, options);
-      }
-    </script>
 
 	<div class="container">
 		<div class="col-md-12 font-herm">© Все права защищены Cryptostake 2015 - 2016.</div>
