@@ -1,0 +1,18 @@
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="0">
+            <File firstVisibleLine="4" xOffset="0" scrollWidth="1015" startPos="185" endPos="185" selMode="0" lang="JavaScript" encoding="65001" filename="C:\Kamran\av\cryptostake\client\main.js" backupFilePath="" originalFileLastModifTimestamp="1510676059" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="-1" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="2368" startPos="1124" endPos="1124" selMode="0" lang="HTML" encoding="65001" filename="C:\Kamran\av\cryptostake\client\main.html" backupFilePath="" originalFileLastModifTimestamp="1510676059" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="2752552" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="67" xOffset="0" scrollWidth="1442" startPos="3217" endPos="3217" selMode="0" lang="HTML" encoding="-1" filename="C:\Kamran\av\cryptostake\public\viewStats\stats.html" backupFilePath="C:\Users\k.kazimi\AppData\Roaming\Notepad++\backup\stats.html@2017-11-13_160656" originalFileLastModifTimestamp="1510412540" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="0" mapWrapIndentMode="-1" mapIsWrap="no">
+                <Fold line="685" />
+                <Fold line="692" />
+                <Fold line="725" />
+                <Fold line="730" />
+                <Fold line="848" />
+                <Fold line="976" />
+            </File>
+            <File firstVisibleLine="0" xOffset="0" scrollWidth="1080" startPos="595" endPos="595" selMode="0" lang="CSS" encoding="-1" filename="C:\Kamran\av\cryptostake\client\css\style.css" backupFilePath="" originalFileLastModifTimestamp="1510676059" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="16777217" mapWrapIndentMode="-1" mapIsWrap="no" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>

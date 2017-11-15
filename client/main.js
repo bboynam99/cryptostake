@@ -19,7 +19,7 @@ Template.main.onRendered(function () {
             $('.datepicker').datepicker();
         });
 
-        jQuery(function ($) {
+        /*(function ($) {
             $.datepicker.regional['ru'] = {
                 closeText: 'Закрыть',
                 prevText: 'Назад',
@@ -34,7 +34,7 @@ Template.main.onRendered(function () {
                 yearSuffix: ''
             };
             $.datepicker.setDefaults($.datepicker.regional['ru']);
-        });
+        });*/
 
         (function ($) {
             $("#accordion").accordion({
