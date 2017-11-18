@@ -1,15 +1,12 @@
 import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
 import { Router, RouteController }	from 'meteor/iron:router';
-
 import './main.html';
 
 Template.main.onRendered(function () {
-    'use strict';
     this.autorun(function () {
         $('.eventblock').addClass('show-blk');
         $('.content-bet-info').addClass('show-blk');
-
 
         (function ($) {
             $("#tabs").tabs();
@@ -19,7 +16,7 @@ Template.main.onRendered(function () {
             $('.datepicker').datepicker();
         });
 
-        /*(function ($) {
+        (function ($) {
             $.datepicker.regional['ru'] = {
                 closeText: 'Закрыть',
                 prevText: 'Назад',
@@ -34,7 +31,7 @@ Template.main.onRendered(function () {
                 yearSuffix: ''
             };
             $.datepicker.setDefaults($.datepicker.regional['ru']);
-        });*/
+        });
 
         (function ($) {
             $("#accordion").accordion({
@@ -61,5 +58,6 @@ Template.main.onRendered(function () {
             currentText: 'Сейчас',
             closeText: 'Закрыть'
         });
+
     });
 })

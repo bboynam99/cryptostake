@@ -113,39 +113,6 @@ var CryptoModel = {
         if (ractiveComponent && CryptoModel.page && ractiveComponent[CryptoModel.page] && ractiveComponent[CryptoModel.page].fragment.rendered) {
             ractiveComponent[CryptoModel.page].unrender();
         }
-
-
-        if ('news' == page) {
-            requireElement({name: 'News', ver: '1.1.0', element: "#" + betInfoBlock.dom_content.id}, {
-                cnt: 0,
-                afterlast: function (name) {
-
-
-                    CryptoModel.page = name;
-                    if (ractiveComponent && CryptoModel.page && ractiveComponent[CryptoModel.page] && !ractiveComponent[CryptoModel.page].fragment.rendered) {
-                        ractiveComponent[name].render();
-                        if (tab || tab != '')
-                            ractiveComponent[name].set('tab', tab);
-                    }
-                }
-            });
-        }
-
-        if ('faq' == page) {
-            requireElement({name: 'Faq', ver: '1.1.0', element: "#" + betInfoBlock.dom_content.id}, {
-                cnt: 0,
-                afterlast: function (name) {
-
-
-                    CryptoModel.page = name;
-                    if (ractiveComponent && CryptoModel.page && ractiveComponent[CryptoModel.page] && !ractiveComponent[CryptoModel.page].fragment.rendered) {
-                        ractiveComponent[name].render();
-                        if (tab || tab != '')
-                            ractiveComponent[name].set('tab', tab);
-                    }
-                }
-            });
-        }
         if ('Event' == page) {
             requireElement({name: 'Event', ver: '1.1.0', element: "#" + betInfoBlock.dom_content.id}, {
                 cnt: 0,

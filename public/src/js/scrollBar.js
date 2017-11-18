@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 function createScroll(settionScroll) {
     var keys = [];
     for (var key in settionScroll) {
@@ -7,7 +7,6 @@ function createScroll(settionScroll) {
 }
 
 function createSctollOne(param,key) {
-
         var defaultOptionsScroll = {
             axis: "y",
             theme: "dark",
@@ -16,7 +15,6 @@ function createSctollOne(param,key) {
                 onCreate: function () {
                     var obj = this;
                     window[key] ={
-
                         selector: param.selector,
                         dom_element: obj,
                         dom_content: obj.querySelector('.mCSB_container'),
@@ -39,5 +37,4 @@ function createSctollOne(param,key) {
             }
         }
         $(param.selector).mCustomScrollbar(defaultOptionsScroll);
-
 }
