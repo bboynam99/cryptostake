@@ -1,0 +1,152 @@
+<template name="Profile">
+    <form action="">
+        <h1>Панель управления</h1>
+        <div class="content-bet-info">
+            <div class="profile-area">
+                <div id="accordion">
+                    <h3>Профиль</h3>
+                    <div>
+                        <img src="/src/img/client.png" class="img-responsive blk-center">
+                        <div class="reg-date">
+                            <p>
+                                <strong>Дата регистрации:</strong>
+                                Mon Sep 26 2016 23:01:40 GMT +0300 (EEST)
+                            </p>
+                            <p>
+                                <strong>Ник:</strong>
+                                test777@mail.ru
+                            </p>
+                            <p>
+                                <strong>Email:</strong>
+                                test777
+                            </p>
+                            <p>
+                                <strong>Pro версия:</strong>
+                                активна
+                            </p>
+                        </div>
+                    </div>
+                    <h3>Кошельки</h3>
+                    <div>
+                        <img src="/src/img/btc.png" class="img-responsive blk-center">
+                        <div class="reg-date">
+                            <p class="ks-p">
+                                <span class="fll">
+                                    №
+                                    <span class="hidden-xs">кошелька:</span>
+                                    <strong>P2354566325545</strong>
+                                </span>
+                                <span class="flr red">567.24 BTC</span>
+                            </p>
+                            <p class="ks-p">
+                                <span class="fll">
+                                    №
+                                    <span class="hidden-xs">кошелька:</span>
+                                    <strong>P4566656236543</strong>
+                                </span>
+                                <span class="flr red">7.00 BTC</span>
+                            </p>
+                            <p class="ks-p">
+                                <span class="fll">
+                                    №
+                                    <span class="hidden-xs">кошелька:</span>
+                                    <strong>P3246778884235</strong>
+                                </span>
+                                <span class="flr red">24.50 BTC</span>
+                            </p>
+                        </div>
+                    </div>
+                    <h3>Создание события</h3>
+                    <div>
+                        <div class="form-group">
+                            <label>
+                                <input type="radio" checked name="dva2"/>
+                                спор
+                            </label>
+                            <label>
+                                <input type="radio" name="dva2"/>
+                                вангуй
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Размер ставки:" id="usr">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Курс:" id="usr">
+                        </div>
+                        <div class="form-group">
+                            <p class="txtl-p">Тип сравнения с указанным курсом:</p>
+                            <label>
+                                <input type="radio" checked name="dva"/>
+                                больше указанного
+                            </label>
+                            <label>
+                                <input type="radio" name="dva"/>
+                                меньше указанного
+                            </label>
+                        </div>
+                        <p class="txtl-p">Прием ставок до:</p>
+                        <div class="row form-group">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="datepicker form-control" placeholder="Дата:">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control"  name="basic_example_2" id="basic_example_2" value="" placeholder="Время:">
+                                </div>
+                            </div>
+                        </div>
+                        <p class="txtl-p">Окончание события:</p>
+                        <div class="row form-group">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="datepicker form-control" placeholder="Дата:">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control"  name="basic_example_2" id="basic_example_3" value="" placeholder="Время:">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Тема:" id="usr">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Описание:"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-default">Создать</button>
+                        </div>
+                    </div>
+                    <h3>Вывод средств</h3>
+                    <div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Сумма:" id="usr">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Адрес:" id="usr">
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-default">Вывести</button>
+                        </div>
+                    </div>
+                    <h3>Обратиться в тех. поддержку</h3>
+                    <div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Тема:" id="usr">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Описание:"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-default">Отправить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</template>

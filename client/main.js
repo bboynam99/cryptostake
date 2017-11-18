@@ -60,4 +60,10 @@ Template.main.onRendered(function () {
         });
 
     });
-})
+});
+
+Template.main.events({
+    'click #profile-button': function (event) {
+        Router.go('/user/profile');
+    }
+});
