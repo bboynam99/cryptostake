@@ -3,29 +3,87 @@
         <div class="content-bet-info">
             <div class="profile-area">
                 <h1>Регистрация</h1>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Никнейм">
+
+                <div class="form-group {{#if compare usernameEmpty 'or' usernameExists}}has-error{{/if}}">
+                    {{#if usernameEmpty}}
+                        <label class="control-label">
+                           Введите никнейм
+                        </label>
+                    {{/if}}
+                    {{#if usernameExists}}
+                        <label class="control-label">
+                           Такой никнейм уже существует
+                        </label>
+                    {{/if}}
+                    <input type="text" class="form-control" placeholder="Никнейм" id="username">
                 </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Имя">
+
+                <div class="form-group {{#if firstNameEmpty}}has-error{{/if}}">
+                    {{#if firstNameEmpty}}
+                        <label class="control-label">
+                           Введите имя
+                        </label>
+                    {{/if}}
+                    <input type="text" class="form-control" placeholder="Имя" id="firstname">
                 </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Фамилия">
+
+                <div class="form-group {{#if lastNameEmpty}}has-error{{/if}}">
+                    {{#if lastNameEmpty}}
+                        <label class="control-label">
+                           Введите фамилию
+                        </label>
+                    {{/if}}
+                    <input type="text" class="form-control" placeholder="Фамилия" id="lastname">
                 </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="E-mail">
+
+                <div class="form-group {{#if compare emailEmpty 'or' emailExists}}has-error{{/if}}">
+                    {{#if emailEmpty}}
+                        <label class="control-label">
+                           Введите E-mail
+                        </label>
+                    {{/if}}
+                    {{#if emailExists}}
+                        <label class="control-label">
+                           Такой E-mail уже существует
+                        </label>
+                    {{/if}}
+                    <input type="text" class="form-control" placeholder="E-mail" id="email">
                 </div>
+
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Дата рождения">
+                    <input type="text" class="form-control" placeholder="Дата рождения" id="birthdate">
                 </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Пароль">
+
+                <div class="form-group {{#if compare passwordEmpty 'or' passSmallLength}}has-error{{/if}}">
+                    {{#if passwordEmpty}}
+                        <label class="control-label">
+                           Введите пароль
+                        </label>
+                    {{/if}}
+                    {{#if passSmallLength}}
+                        <label class="control-label">
+                           Слишком короткий пароль
+                        </label>
+                    {{/if}}
+                    <input type="password" class="form-control" placeholder="Пароль" id="password">
                 </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Подтвердите пароль">
+
+                <div class="form-group {{#if compare passRepeatEmpty 'or' passDontMatch}}has-error{{/if}}">
+                    {{#if passRepeatEmpty}}
+                        <label class="control-label">
+                           Подтвердите пароль
+                        </label>
+                    {{/if}}
+                    {{#if passDontMatch}}
+                        <label class="control-label">
+                           Пароли не совпадают
+                        </label>
+                    {{/if}}
+                    <input type="password" class="form-control" placeholder="Подтвердите пароль" id="confirm">
                 </div>
+
                 <div class="form-group">
-                    <button type="button" class="btn btn-default">Отправить</button>
+                    <button type="submit" class="btn {{#if fieldsNotComplete}}btn-danger{{else}}btn-default{{/if}}">Отправить</button>
                 </div>
             </div>
         </div>
