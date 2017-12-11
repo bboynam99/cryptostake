@@ -25,3 +25,7 @@ accounts-ui
 accounts-facebook
 facebook-config-ui
 ostrio:templatehelpers
+ostrio:files
+chfritz:filedrop
+cfs:graphicsmagick
+aldeed:template-extension

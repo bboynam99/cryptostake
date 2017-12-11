@@ -14,6 +14,13 @@ Template.Register.onCreated(function(){
 	this.passSecond			= new ReactiveVar();
 
 	this.fieldsNotComplete	= new ReactiveVar();
+
+	PICTURE_UPLOAD		= this.currentUpload		= new ReactiveVar(false);
+	UPLOADED_FILE		= this.uploadedFile			= new ReactiveVar();
+	UPLOADED_AVATAR		= this.uploadedAvatar		= new ReactiveVar();
+
+	TEMP_PICTURES		= this.tempPictures			= new Array;
+	TEMP_AVATARS		= this.tempAvatars			= new Array;
 });
 
 Template.Register.onRendered(function(){
@@ -68,8 +75,11 @@ Template.Register.events({
 			firstName:	event.target.firstname.value.trim(),
 			lastName:	event.target.lastname.value.trim(),
 			email:		event.target.email.value.trim(),
+			picture:	UPLOADED_FILE.get(),
+			avatar:		UPLOADED_AVATAR.get(),
 			birthDate:	event.target.birthdate.value,
-			password:	event.target.password.value	
+			password:	event.target.password.value
+
 		};
 		Meteor.call('signUp', data, function(error, result){
 			if (error) {
@@ -123,6 +133,35 @@ Template.Register.events({
 		else																					template.passDontMatch.set(false);
 
 		template.passSecond = $(event.target).val();
+	},
+	'change #fileInput': function (event, template) {
+		if (event.currentTarget.files && event.currentTarget.files[0]) {
+			var file = event.currentTarget.files[0];
+			if (file) {
+				var uploadInstance = Pictures.insert({
+					file:		file,
+					streams:	'dynamic',
+					chunkSize:	'dynamic',
+					transport:	'ddp'
+				}, false);
+
+				uploadInstance.on('start', function() {
+					PICTURE_UPLOAD.set(this);
+				});
+
+				uploadInstance.on('end', function(error, fileObj) {
+					if (error) {
+						Bert.alert('Error during upload: ' + error.reason, 'danger', 'fixed-top');
+					} else {
+						UPLOADED_FILE.set(fileObj._id);
+						TEMP_PICTURES.push(fileObj._id);
+						Meteor.call("setTempFiles", fileObj._id, "picture");
+					}
+					PICTURE_UPLOAD.set(false);
+				});
+				uploadInstance.start();
+			}
+		}
 	}
 });
 
@@ -159,5 +198,26 @@ Template.Register.helpers({
 	},
 	fieldsNotComplete: function(){
 		return Template.instance().fieldsNotComplete.get();
+	},
+	currentUpload: function (){
+		return PICTURE_UPLOAD.get();
+	},
+	uploadedFiles: function (){
+		if (UPLOADED_FILE.get()
+			&& Pictures.findOne({_id: UPLOADED_FILE.get()})
+			&& Pictures.findOne({_id: UPLOADED_FILE.get()}).versions.reduced)
+			return true;
+	},
+	avatarDropHandlers: function(){
+		return {
+			onEnter: function(event){
+				console.log("enter", event);
+			},
+			onDrop: function(files){
+				console.log("dropped", files);
+				var input = document.getElementById('fileInput');
+				input.files = files;
+			}
+		};
 	}
 });

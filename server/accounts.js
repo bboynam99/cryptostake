@@ -8,8 +8,8 @@ Accounts.onCreateUser(function(options, user){
 	if (options.firstName)		user.profile.firstName		= options.firstName;
 	if (options.lastName)		user.profile.lastName		= options.lastName;
 	if (options.birthDate)		user.profile.birthDate		= options.birthDate;
-	if (options.profilePic)		user.profile.profilePic		= options.profilePic;
-	if (options.profilePhoto)	user.profile.profilePhoto	= options.profilePhoto;
+	if (options.picture)		user.profile.picture		= options.picture;
+	if (options.avatar)			user.profile.avatar			= options.avatar;
 	return user;
 });
 
