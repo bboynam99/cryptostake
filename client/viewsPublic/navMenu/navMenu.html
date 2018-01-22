@@ -1,0 +1,28 @@
+<template name="navMenu">
+    <ul class="nav-menu">
+        <li>
+            <a href="/">Cтавки</a>
+        </li>
+        <li>
+            <a href="/news">Новости</a>
+        </li>
+        <li>
+            <a href="/stats">Статистика</a>
+        </li>
+        <li>
+            <a href="/faq">FAQ</a>
+        </li>
+        <li>
+            <a href="/contacts">Контакты</a>
+        </li>
+        <li>
+            {{>loginButtons}}
+        </li>
+        <li class="mail-icon">
+            <a href="/user/messenger">
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                <div class="notif-numbers">8</div>
+            </a>
+        </li>
+    </ul>
+</template>

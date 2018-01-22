@@ -197,6 +197,7 @@ button.cancelButton-swal:hover{color:#282828!important}
 
 .show-blk{
     display: block;
+    overflow-y: auto;
 }
 
 .clickwholebox a:hover h6, .clickwholebox a:hover p{

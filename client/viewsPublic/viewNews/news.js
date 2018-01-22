@@ -1,23 +1,40 @@
+Template.News.onCreated(function(){
+    this.subscribe('newsPage');
+});
+
 Template.News.onRendered(function () {
     //this.autorun(function () {
         $('.eventblock').addClass('show-blk');
         $('.content-bet-info').addClass('show-blk');
 
-        createScroll({
-            /*newsBlock: {
-                selector: '.news-block',
-                options: {axis: 'x'},
-                callbacks: {}
-            },*/
+        $(document).ready(function () {
+            $('.eventblock').createScroll({
+                betInfoBlock: {
+                    selector: '.content-bet-info',
+                    options: {},
+                    callbacks: {create: function () {
+
+                        }
+                    }
+                }
+            })
+        })
+
+        /*createScroll({
             betInfoBlock: {
                 selector: '.content-bet-info',
                 options: {},
-                callbacks: {
-                    create: function () {
+                callbacks: {create: function () {
 
                     }
                 }
             }
-        });
+        });*/
     //});
 })
+
+Template.News.helpers({
+    news: function(){
+        return News.find().fetch();
+    }
+});

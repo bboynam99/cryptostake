@@ -1,7 +1,23 @@
 <template name="News">
 	<h1>Новости</h1>
 	<div class="content-bet-info">
-		<div class="news-block-area">
+		{{#each news}}
+			<div class="news-block-area">
+				<div class="time">{{showDateDDMMYYYY createdAt}}</div>
+				<a href="#" class="no-post-hover">
+					<div class="h1-post">
+						{{caption}}
+					</div>
+				</a>
+				<img src="src/img/11.jpg" class="img-responsive" alt="">
+				{{{shortDesc}}}
+				<a href="#" class="button">
+					<button type="button" class="btn btn-default">Читать далее</button>
+				</a>
+			</div>
+		{{/each}}
+
+<!-- 		<div class="news-block-area">
 			<div class="time">01.12.2016</div>
 			<a href="#" class="no-post-hover">
 				<div class="h1-post">
@@ -61,6 +77,6 @@
 			<a href="#" class="button">
 				<button type="button" class="btn btn-default">Читать далее</button>
 			</a>
-		</div>
+		</div> -->
 	</div>
 </template>
